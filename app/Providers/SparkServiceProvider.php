@@ -53,7 +53,7 @@ class SparkServiceProvider extends ServiceProvider
     {
         Spark::useStripe()->teamTrialDays(10);
 
-        Spark::teamPlan('Basic', 'prod_EpYjWMzEGDvbOL')
+        Spark::teamPlan('Basic', 'basic-sub')
             ->price(49.99)
             ->features([
                 'Team Members $14.99/Member', 'Property Add-On $19.99/Property', 'Check-in Reports $9.99/Report','Guest Invites 10 Invites/Month','Questionnaire Limitations','No Alfredge Support','No Access to House Rules','No Access to House Manual'
@@ -65,7 +65,7 @@ class SparkServiceProvider extends ServiceProvider
                 'Team Members $9.99/Member', 'Property Add-On $19.99/Property', 'Check-in Reports $2.99/Report','Guest Invites Unlimited','Questionnaire Unlimited','No Alfredge Support','Access to House Rules','Access to House Manual'
             ]);
         
-        Spark::teamPlan('Business', 'prod_EpYno1FcD1e5Qz')
+        Spark::teamPlan('Business', 'business-sub')
             ->price(199.99)
             ->features([
                 'Team Members Unlimited', 'Property Add-On Unlimited', 'Check-in Reports Unlimited','Guest Invites Unlimited','Questionnaire Unlimited','Alfredge Support','Access to House Rules','Access to House Manual'
